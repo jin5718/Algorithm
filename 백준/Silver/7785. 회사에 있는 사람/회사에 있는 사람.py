@@ -1,4 +1,6 @@
-N = int(input())
+import sys
+
+N = int(sys.stdin.readline())
 people = set()
 result = []
 
