@@ -11,9 +11,8 @@ class Solution {
             }
         }
         Collections.sort(arr);
-        int n = arr.size();
         
-        int[] answer = new int[n];
+        int[] answer = new int[arr.size()];
         for(int i = 0; i < arr.size(); i++){
             answer[i] = arr.get(i);
         }
