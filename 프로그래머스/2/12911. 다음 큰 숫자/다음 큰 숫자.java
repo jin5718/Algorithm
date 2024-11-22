@@ -4,9 +4,14 @@ class Solution {
         int cnt = Integer.bitCount(n);
         
         int m = n + 1;
-        while(Integer.bitCount(m) != cnt){                   
+        int mcnt = Integer.bitCount(m);
+        while(true){            
+            if(cnt == mcnt){
+                answer = m;
+                break;
+            }
             m++;
         }
-        return m;
+        return answer;
     }
 }
